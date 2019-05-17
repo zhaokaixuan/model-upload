@@ -12,4 +12,10 @@ function Evaluation() {
   this.get_filename = function() {
     return this.filenames[this.index];
   }
+  this.num_frames = function() {
+    return this.test_data.length;
+  }
+  this.get_data = function () {
+    return this.test_data[this.index];
+  }
 }

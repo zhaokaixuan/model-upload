@@ -1,26 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <input type="file" id="file_input" class="inputfile" multiple>
+    <nav class="tools">
+        <ul id="tools">
+            <li><input type="file" id="file_input" class="inputfile" multiple></li>
+            <li><a href="#" class="selected" id="move"><i class="fa material-icons">3d_rotation</i></a></li>
+            <li><a href="#" id="move2D"><i class="fa fa-pencil"></i></a></li>
+            <li>
+                <button type='button' id='record' style="display: none;">Click to start recording</button>
+            <li>
+        </ul>
+    </nav>
+
     <div id="container"></div>
+    <footer id="footer">
+        <p></p>
+    </footer>
     <script src="./libs/three.js"></script>
     <script src="./libs/Detector.js"></script>
     <script src="./libs/OrbitControls.js"></script>
     <script src="./libs/stats.js"></script>
     <script src="./libs/dat.gui.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="./js/main.js"></script>
     <script src="./js/upload.js"></script>
     <script src="./js/Evaluation.js"></script>
     <script src="./js/Evaluator.js"></script>
     <script src="./js/ObjectTable.js"></script>
     <script src="./js/pointcloud.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>

@@ -33,12 +33,14 @@ function readData(text_reader) {
     evaluation.add_data(floatarr);
     if(evaluation.num_frames() === 1) {
         reset();
+        data = evaluation.get_data();
         show();
+        
         animate();
-        $("#record").show();
         isRecording = false;
-        $("#file_input").hide();
         select2DMode();
+        document.getElementById('record').style.display = 'block';
+        
     }
 }
 
